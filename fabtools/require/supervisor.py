@@ -58,10 +58,10 @@ def process(name, **kwargs):
     family = distrib_family()
 
     if family == 'debian':
-        require_deb_package('supervisor')
+        #require_deb_package('supervisor')
         require_started('supervisor')
     elif family == 'redhat':
-        require_rpm_package('supervisor')
+        #require_rpm_package('supervisor')
         require_started('supervisord')
 
     # Set default parameters
